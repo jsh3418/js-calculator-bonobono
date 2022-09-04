@@ -6,5 +6,5 @@ export const updatePreviousKey = (key) => {
 
 export const clearDisplay = () => {
   const display = document.querySelector(".display-number");
-  display.textContent = "";
+  display.textContent = "0";
 };
