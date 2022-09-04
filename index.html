@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>보노보노 계산기</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
   </head>
   <body>
     <!-- 최상위 부모 -->
@@ -20,33 +21,33 @@
       <!-- 하단영역 -->
       <div class="calculator-buttons h400">
         <div class="d-flex h20">
-          <button class="button fg-1">AC</button>
-          <button class="button fg-1">+/-</button>
-          <button class="button fg-1">%</button>
-          <button class="button fg-1">÷</button>
+          <button id="all-clear" class="button fg-1">AC</button>
+          <button id="sign-switch" class="button fg-1">+/-</button>
+          <button id="percentage" class="button fg-1">%</button>
+          <button class="button operator fg-1">÷</button>
         </div>
         <div class="d-flex h20">
-          <button class="button fg-1">7</button>
-          <button class="button fg-1">8</button>
-          <button class="button fg-1">9</button>
-          <button class="button fg-1">X</button>
+          <button class="button number fg-1">7</button>
+          <button class="button number fg-1">8</button>
+          <button class="button number fg-1">9</button>
+          <button class="button operator fg-1">X</button>
         </div>
         <div class="d-flex h20">
-          <button class="button fg-1">4</button>
-          <button class="button fg-1">5</button>
-          <button class="button fg-1">6</button>
-          <button class="button fg-1">-</button>
+          <button class="button number fg-1">4</button>
+          <button class="button number fg-1">5</button>
+          <button class="button number fg-1">6</button>
+          <button class="button operator fg-1">-</button>
         </div>
         <div class="d-flex h20">
-          <button class="button fg-1">1</button>
-          <button class="button fg-1">2</button>
-          <button class="button fg-1">3</button>
-          <button class="button fg-1">+</button>
+          <button class="button number fg-1">1</button>
+          <button class="button number fg-1">2</button>
+          <button class="button number fg-1">3</button>
+          <button class="button operator fg-1">+</button>
         </div>
         <div class="d-flex h20">
-          <button class="button fg-2">0</button>
-          <button class="button fg-1">.</button>
-          <button class="button fg-1">=</button>
+          <button class="button number fg-2">0</button>
+          <button id="decimal" class="button number fg-1">.</button>
+          <button id="calculate" class="button operator fg-1">=</button>
         </div>
       </div>
     </div>
