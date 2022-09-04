@@ -1,0 +1,105 @@
+/* body * {
+  outline: 1px solid red;
+} */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 50px;
+}
+
+.calculator {
+  width: 350px;
+  height: 500px;
+  border: 1px solid blue;
+  animation: rainbow 2s ease infinite;
+  user-select: none;
+}
+
+@keyframes rainbow {
+  0% {
+    color: #ff0053;
+  }
+  12% {
+    color: #ff5353;
+  }
+  24% {
+    color: #ffcf53;
+  }
+  36% {
+    color: #e8ff53;
+  }
+  48% {
+    color: #53ff5d;
+  }
+  60% {
+    color: #53ffbc;
+  }
+  72% {
+    color: #5393ff;
+  }
+  84% {
+    color: #ca53ff;
+  }
+  100% {
+    color: #ff53bd;
+  }
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+  height: 100vh;
+  background-image: url("https://img1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/cnoC/image/6n5cXdQLDt3_hJi8PCyvtduleAU.jpg");
+  background-size: 100vh;
+}
+
+.display {
+  background-color: gray;
+  font-size: 1px;
+  height: 20%;
+}
+
+.display-number {
+  text-align: end;
+}
+
+.display > button {
+  font-size: 15px;
+  background-color: gray;
+}
+
+.button {
+  outline: 1px solid black;
+}
+
+.button:hover {
+  animation: rainbow 2s ease infinite;
+}
+
+.d-flex {
+  display: flex;
+  align-items: stretch;
+}
+
+.fg-1 {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.fg-2 {
+  flex-grow: 2;
+  flex-basis: 0;
+}
+
+.h400 {
+  height: 400px;
+}
+
+.h20 {
+  height: 20%;
+}
