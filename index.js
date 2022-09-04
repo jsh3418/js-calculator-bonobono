@@ -13,7 +13,16 @@ const handleNumberButtonClick = (event) => {
 };
 
 const addNumber = (number) => {
-  display.textContent = number;
+  if (!hasDisplayValue()) {
+    display.textContent = number;
+    return;
+  }
+  if (hasDisplayValue()) {
+    display.textContent += number;
+    return;
+  }
 };
+
+const hasDisplayValue = () => display.textContent !== "0";
 
 initApp();
